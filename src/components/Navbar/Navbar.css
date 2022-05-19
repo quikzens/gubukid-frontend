@@ -1,0 +1,38 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.navbar-logo {
+  width: 150px;
+}
+
+.navbar-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-btn {
+  padding: 12px 18px;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit;
+  border-radius: 5px;
+}
+
+.navbar-btn {
+  color: rgba(167, 167, 167, 1);
+  font-weight: 500;
+}
+
+.navbar-btn.primary {
+  color: inherit;
+  background-color: rgba(196, 196, 196, 0.25);
+}
