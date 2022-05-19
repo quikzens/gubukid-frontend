@@ -1,0 +1,35 @@
+.alert {
+  position: fixed;
+  bottom: -5rem;
+  right: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+  z-index: 1000;
+  background-color: white;
+}
+
+.alert.active {
+  bottom: 2rem;
+}
+
+.alert-error {
+  color: var(--clr-error);
+  /* border-color: var(--clr-error); */
+}
+
+.alert-success {
+  color: var(--clr-success);
+  border-color: var(--clr-success);
+}
+
+.alert-content {
+  align-items: center;
+}
+
+.alert-icon {
+  display: block;
+  height: 24px;
+  font-size: 1.5rem;
+}
