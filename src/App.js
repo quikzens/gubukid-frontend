@@ -1,7 +1,69 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Alert from './components/Alert/Alert'
+import Navbar from './components/Navbar/Navbar'
+import { AlertProvider } from './contexts/AlertContext'
+import { UserProvider } from './contexts/UserContext'
+
+import PrivatePage from './pages/PrivateRoute'
+import Home from './pages/Home/Home'
+import Profile from './pages/Profile/Profile'
+import Booking from './pages/Booking/Booking'
+import History from './pages/History/History'
+import House from './pages/House/House'
+import Transaction from './pages/Transaction/Transaction'
+
 export default function App() {
   return (
-    <div className="app">
-      <h1>GubukID</h1>
-    </div>
+    <UserProvider>
+      <AlertProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="/profile"
+              element={
+                <PrivatePage allowedRoles={['tenant', 'owner']}>
+                  <Profile />
+                </PrivatePage>
+              }
+            />
+            <Route
+              path="/bookings"
+              element={
+                <PrivatePage allowedRoles={['tenant']}>
+                  <Booking />
+                </PrivatePage>
+              }
+            />
+            <Route
+              path="/histories"
+              element={
+                <PrivatePage allowedRoles={['tenant', 'owner']}>
+                  <History />
+                </PrivatePage>
+              }
+            />
+            <Route
+              path="/houses"
+              element={
+                <PrivatePage allowedRoles={['owner']}>
+                  <House />
+                </PrivatePage>
+              }
+            />
+            <Route
+              path="/transactions"
+              element={
+                <PrivatePage allowedRoles={['owner']}>
+                  <Transaction />
+                </PrivatePage>
+              }
+            />
+          </Routes>
+          <Alert />
+        </BrowserRouter>
+      </AlertProvider>
+    </UserProvider>
   )
 }
