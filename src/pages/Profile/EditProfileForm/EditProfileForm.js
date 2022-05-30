@@ -133,9 +133,7 @@ export default function EditProfileForm(props) {
         </div>
       </div>
       <button
-        className={`modal-submit button  ${
-          status !== 'idle' ? 'disabled' : ''
-        }`}
+        className={`modal-submit button ${status !== 'idle' ? 'disabled' : ''}`}
         type="submit"
       >
         <div className="button-content">{buttonContent[status]}</div>
