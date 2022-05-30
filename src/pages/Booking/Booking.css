@@ -1,0 +1,195 @@
+.page-booking,
+.page-history {
+  margin: 4rem 0;
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.booking__item {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.booking__item .booking__content {
+  padding: 20px 2rem 2rem 2rem;
+  border-radius: 5px;
+  border: 2px solid rgba(183, 183, 183, 0.3);
+  color: var(--clr-black);
+}
+
+.booking__logo {
+  max-width: 140px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.booking__status {
+  display: inline-block;
+  margin-top: 25px;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 4px 10px;
+}
+
+.waiting-payment .booking__status,
+.cancel .booking__status {
+  background-color: rgba(236, 122, 122, 0.2);
+  color: rgba(236, 122, 122, 1);
+}
+
+.waiting-approve .booking__status {
+  background-color: rgba(255, 153, 0, 0.2);
+  color: rgba(255, 153, 0, 1);
+}
+
+.approved .booking__status {
+  background-color: rgba(60, 247, 30, 0.2);
+  color: var(--clr-success);
+}
+
+.booking__section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking__section__sub h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.booking__content div:first-child > div {
+  max-width: 280px;
+}
+
+.booking__info {
+  margin-left: 85px;
+  margin-right: 110px;
+  margin-top: 105px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 70px;
+  row-gap: 25px;
+}
+
+.booking__info h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.booking__info p {
+  font-size: 14px;
+  color: rgba(149, 149, 149, 1);
+  font-weight: 400;
+}
+
+.booking__table__container {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+.booking__table {
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+.booking__table tr {
+  display: flex;
+  padding: 2px 2rem;
+  border-bottom: 2px solid rgba(183, 183, 183, 0.3);
+}
+
+.booking__table th,
+.booking__table td {
+  width: 100%;
+  text-align: left;
+}
+
+.booking__table td {
+  line-height: 1;
+  font-weight: 400;
+  color: rgba(149, 149, 149);
+}
+
+.booking__section__address {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.booking__table tfoot tr {
+  border-bottom: 0;
+}
+
+.booking__table .booking__table__info {
+  color: #222;
+  font-weight: 600;
+}
+
+.waiting-payment .booking__table__info__total,
+.cancel .booking__table__info__total {
+  color: red;
+}
+
+.waiting-approve .booking__table__info__total {
+  color: rgb(253, 143, 40);
+}
+
+.approved .booking__table__info__total {
+  color: var(--clr-success);
+}
+
+.booking__payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking__payment h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.booking__payment img {
+  display: block;
+  border: 3px solid black;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+.booking__payment p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: rgba(149, 149, 149, 1);
+}
+
+.booking__cta {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem auto 0 auto;
+}
+
+.booking__cta .button {
+  width: max-content;
+  padding: 0.5rem 3rem;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: var(--clr-primary);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
