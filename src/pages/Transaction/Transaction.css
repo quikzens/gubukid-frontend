@@ -1,0 +1,77 @@
+.home-owner {
+  padding: 60px 80px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.home-owner h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.home-owner__table {
+  width: 100%;
+}
+
+.home-owner__table tr {
+  display: flex;
+  justify-content: stretch;
+  border-bottom: 2px solid rgba(196, 196, 196, 1);
+}
+
+.home-owner__table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.home-owner__table td,
+.home-owner__table th {
+  width: 200px;
+  padding: 1.5rem 2rem;
+}
+
+.home-owner__table th {
+  font-weight: 600;
+}
+
+.home-owner__table td {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.home-owner__table th,
+.home-owner__table td {
+  text-align: left;
+}
+
+.home-owner__table td:last-child img {
+  cursor: pointer;
+}
+
+.home-owner__table .payment-proof {
+  font-size: 1.6rem;
+  color: inherit;
+}
+
+.home-owner__cta {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.home-owner .approve {
+  color: rgb(21, 231, 21);
+}
+
+.home-owner .cancel {
+  color: red;
+}
+
+.home-owner .waiting-approve {
+  color: rgb(253, 143, 40);
+}
+
+.home-owner .booking__item .booking__content {
+  border: 0;
+}
