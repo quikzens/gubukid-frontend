@@ -1,0 +1,19 @@
+.page-house-header {
+  padding: 3rem;
+}
+
+.house-add-button {
+  background-color: transparent;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.house-add-button:hover {
+  color: white;
+  background-color: var(--clr-primary);
+  transition: 0.1s ease;
+}
