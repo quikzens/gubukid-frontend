@@ -1,6 +1,6 @@
 :root {
   --clr-black: #333333;
-  --clr-primary: #28b463;
+  --clr-primary: #23adad;
   --clr-error: #a73848;
   --clr-success: #28b463;
   --light-red: rgba(236, 122, 122, 0.2);
@@ -43,6 +43,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: 'Inter', sans-serif;
   color: var(--clr-black);
 }
@@ -254,12 +255,28 @@ th {
   gap: 1.5rem;
 }
 
+.gap-2 {
+  gap: 2rem;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
 .jc-center {
   justify-content: center;
 }
 
+.jc-between {
+  justify-content: space-between;
+}
+
 .ai-center {
   align-items: center;
+}
+
+.ai-start {
+  align-items: flex-start;
 }
 
 .v-hidden {
@@ -267,6 +284,19 @@ th {
   opacity: 0;
   z-index: -1;
   position: absolute;
+}
+
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .button {
@@ -294,4 +324,8 @@ th {
   justify-content: center;
   align-items: center;
   height: 21px;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
 }
