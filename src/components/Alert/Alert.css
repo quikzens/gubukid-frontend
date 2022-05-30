@@ -16,7 +16,7 @@
 
 .alert-error {
   color: var(--clr-error);
-  /* border-color: var(--clr-error); */
+  border-color: var(--clr-error);
 }
 
 .alert-success {
