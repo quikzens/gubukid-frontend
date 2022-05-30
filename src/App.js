@@ -11,6 +11,7 @@ import Booking from './pages/Booking/Booking'
 import History from './pages/History/History'
 import House from './pages/House/House'
 import Transaction from './pages/Transaction/Transaction'
+import HouseDetail from './pages/HouseDetail/HouseDetail'
 
 export default function App() {
   return (
@@ -49,6 +50,14 @@ export default function App() {
               element={
                 <PrivatePage allowedRoles={['owner']}>
                   <House />
+                </PrivatePage>
+              }
+            />
+            <Route
+              path="/houses/:id"
+              element={
+                <PrivatePage allowedRoles={['tenant', 'owner']}>
+                  <HouseDetail />
                 </PrivatePage>
               }
             />
