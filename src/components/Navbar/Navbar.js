@@ -3,10 +3,10 @@ import Modal from '../Modal/Modal'
 import LoginForm from './LoginForm/LoginForm'
 import RegisterForm from './RegisterForm/RegisterForm'
 import logo from '../../assets/images/logo.png'
-import './Navbar.css'
 import { useState } from 'react'
 import { useUser } from '../../contexts/UserContext'
 import UserInfo from './UserInfo/UserInfo'
+import './Navbar.css'
 
 export default function Navbar() {
   const { isLoggedIn } = useUser()
